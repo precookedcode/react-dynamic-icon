@@ -1,7 +1,9 @@
 
 # @precooked/react-dynamic-icon
 
-A React component for rendering dynamic SVG icons with customizable paths and colors. The icon scales based on the provided `size` prop and defaults to a 24x24 size.
+![Precooked Logo](https://precookedcode.com/assets/logos/logo-horizontal-dark.svg)
+
+`@precooked/react-dynamic-icon` is React component for rendering dynamic SVG icons with customizable paths and colors. The icon scales based on the provided `size` prop and defaults to a 24x24 size.
 
 ## Installation
 
