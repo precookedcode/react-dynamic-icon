@@ -11,10 +11,10 @@ interface Path {
 interface DynamicIconProps {
     size?: number;  // El tamaño es opcional
     paths: Path[];  // "paths" es obligatorio y es un array de objetos que siguen la interface "Path"
-    styles?: React.CSSProperties; // Estilo opcional
+    style?: React.CSSProperties; // Estilo opcional
 }
 
-const DynamicIcon: React.FC<DynamicIconProps> = ({ size = 24, paths, styles }) => {
+const DynamicIcon: React.FC<DynamicIconProps> = ({ size = 24, paths, style }) => {
 
     useEffect(() => {
         // Aquí puedes añadir efectos colaterales si los necesitas
@@ -29,7 +29,7 @@ const DynamicIcon: React.FC<DynamicIconProps> = ({ size = 24, paths, styles }) =
 
     return (
         <svg
-            style={{ ...styles, width: size, height: size }}
+            style={{ ...style, width: size, height: size }}
             viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
         >
